@@ -1,0 +1,157 @@
+html,
+body {
+    margin: 20;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: white;
+    color: black;
+    height: 68px;
+    width: 100%;
+    position: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+}
+
+#logo {
+    width: 90px;
+    position: absolute;
+    margin-left: 5%;
+}
+
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+
+li {
+    float: left;
+    padding: 20px 20px 20px 20px;
+}
+
+li:hover {
+    background-color: rgb(240, 237, 237);
+}
+
+#imagemfundo {
+    background-image: url(img/mulheress.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#título {
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+}
+
+#subtítulo {
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#ação {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+}
+
+.títulossec {
+    padding-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#bloco1 {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    float: left;
+    margin: 60px;
+    padding: 4px;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: rgb(240, 237, 237);
+}
+
+#bloco2, #bloco3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+#bloco4 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.destaque {
+    background-color: rgb(240, 237, 237);
+
+}
+
+.imgbloco4 {
+    width: 50%;
+    height: 50%;
+}
+
+#sobre {
+    display: flex;
+    width: 100%;
+    height: 20%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:justify;
+}
+
+
+
+.três {
+    width: 27%;
+    padding: 0 2%;
+    display: inline-block;
+}
+
+footer {
+    background-color: rgb(251, 162, 130);
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+#contato {
+    width: 20px;
+}
+
+@media all and (max-width:768px) {
+#menu {
+    visibility: hidden;
+    }
+.títulossec, #bloco1, #bloco2, #bloco3, #bloco4, .três, #sobre{
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+}
+.logodiv{
+
+    width: 100%;
+    position: relative;
+    text-align: center;
+    }
+
+    #menu{
+        margin-right: 0px;
+        transform: translate(+100%);
+    }
+}
